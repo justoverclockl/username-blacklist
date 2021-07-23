@@ -11,13 +11,11 @@
 import app from 'flarum/app';
 
 app.initializers.add('justoverclock/username-blacklist', () => {
-  app.extensionData
-    .for('justoverclock-username-blacklist')
-    .registerSetting({
-      setting: 'justoverclock-username-blackList',
-      name: 'blackList',
-      type: 'text',
-      label: app.translator.trans('username-blacklist.admin.blackList'),
-      help: app.translator.trans('username-blacklist.admin.blackList-help'),
-    })
+    app.extensionData.for('justoverclock-username-blacklist').registerSetting({
+        setting: 'justoverclock-username-blackList',
+        name: 'blackList',
+        type: 'text',
+        label: app.translator.trans('username-blacklist.admin.blackList'),
+        help: app.translator.trans('username-blacklist.admin.blackList-help'),
+    });
 });

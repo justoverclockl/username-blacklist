@@ -12,7 +12,6 @@ import app from 'flarum/forum/app';
 import Modal from 'flarum/common/components/Modal';
 
 export default class BannedWordModal extends Modal {
-
     static isDismissible = true;
 
     className() {
@@ -28,7 +27,8 @@ export default class BannedWordModal extends Modal {
         const assetsFolder = app.forum.attribute('baseUrl') + '/assets/extensions/justoverclock-username-blacklist/shield-warning-icon.png';
         return (
             <div className="warningmodal">
-              <img className="warningimage" src={assetsFolder} alt="Italian Trulli"></img><br/>
+                <img className="warningimage" src={assetsFolder} alt="Italian Trulli"></img>
+                <br />
                 <p className="warningModalTitle">{ModalBody}</p>
                 <p className="warningModalText">{TextBlock}</p>
             </div>

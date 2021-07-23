@@ -15,8 +15,7 @@ import BannedWordModal from './component/ModalAlert';
 
 app.initializers.add('justoverclock/username-blacklist', () => {
     extend(SignUpModal.prototype, 'oncreate', function () {
-
-        const banned = ['admin',...app.forum.attribute('blackList').split(',')];
+        const banned = ['admin', ...app.forum.attribute('blackList').split(',')];
 
         document.getElementsByName('username')[0].addEventListener(
             'keyup',
@@ -24,7 +23,11 @@ app.initializers.add('justoverclock/username-blacklist', () => {
                 var text = document.getElementsByName('username')[0].value;
                 for (var x = 0; x < banned.length; x++) {
                     if (text.search(banned[x]) !== -1) {
-                        app.modal.show(BannedWordModal);
+                        setTimeout(showAlert, 800);
+
+                        function showAlert() {
+                            app.modal.show(BannedWordModal);
+                        }
                     }
                     var regExp = new RegExp(banned[x]);
                     text = text.replace(regExp, '');
@@ -34,7 +37,8 @@ app.initializers.add('justoverclock/username-blacklist', () => {
                 } else {
                     document.getElementsByName('username')[0].value = text;
                 }
-            }, false
+            },
+            false
         );
     });
 });
