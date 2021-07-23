@@ -25,9 +25,11 @@ export default class BannedWordModal extends Modal {
     content() {
         const ModalBody = app.translator.trans('username-blacklist.forum.modal-body-first-line');
         const TextBlock = app.translator.trans('username-blacklist.forum.modal-body-second-line');
+        const assetsFolder = app.forum.attribute('baseUrl') + '/assets/extensions/justoverclock-username-blacklist/shield-warning-icon.png';
         return (
             <div className="warningmodal">
-                <i className="fas fa-exclamation"></i>{ModalBody}
+              <img className="warningimage" src={assetsFolder} alt="Italian Trulli"></img><br/>
+                <p className="warningModalTitle">{ModalBody}</p>
                 <p className="warningModalText">{TextBlock}</p>
             </div>
         );

@@ -34,8 +34,7 @@ app.initializers.add('justoverclock/username-blacklist', () => {
                 } else {
                     document.getElementsByName('username')[0].value = text;
                 }
-            },
-            false
+            }, false
         );
     });
 });
