@@ -4,6 +4,9 @@
 
 A [Flarum](http://flarum.org) extension. Add a blacklist for certain username during registration
 
+![HhetIZV7P3](https://user-images.githubusercontent.com/79002016/126813426-2e1c70c9-b684-4190-b9e9-fce28617e7bd.gif)
+
+
 ### Installation
 
 Install with composer:
