@@ -1,6 +1,6 @@
 # UsernameBlacklist
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/justoverclock/username-blacklist.svg)](https://packagist.org/packages/justoverclock/username-blacklist) [![Total Downloads](https://img.shields.io/packagist/dt/justoverclock/username-blacklist.svg)](https://packagist.org/packages/justoverclock/username-blacklist)
+![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://poser.pugx.org/justoverclock/username-blacklist/v)](https://packagist.org/packages/justoverclock/username-blacklist) [![Total Downloads](https://poser.pugx.org/justoverclock/username-blacklist/downloads)](https://packagist.org/packages/justoverclock/username-blacklist)
 
 A [Flarum](http://flarum.org) extension. Add a blacklist for certain username during registration
 
